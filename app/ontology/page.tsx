@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 import { Search } from 'lucide-react'
 import Image from 'next/image'
 import { Dialog, DialogPanel, DialogTitle } from '@headlessui/react'
-import ontologyImage from '../diagram-export-1-5-2025-12_20_19-PM.png' // Import the image
+import ontologyImage from '../ontology.jpg' // Import the image
 
 // Dynamically import ReactJson to avoid SSR issues
 const ReactJson = dynamic(() => import('react-json-view'), { ssr: false })
@@ -136,9 +136,9 @@ export default function OntologyExplorer() {
           <Image
             src={ontologyImage} // Use the imported image
             alt="Ontology Image"
-            width={600}
-            height={400}
-            className="rounded-lg border-4 border-gray-300 cursor-pointer"
+            width={200}
+            height={100}
+            className="rounded-lg border-4 border-gray-300 cursor-pointer bg-brown"
             onClick={() => setIsZoomed(true)}
           />
         </div>
